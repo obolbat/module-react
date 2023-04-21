@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4c9451a-0127-45f3-bd76-c95d93be5f0e" name="Default Changelist" comment="" />
+    <list default="true" id="c4c9451a-0127-45f3-bd76-c95d93be5f0e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +109,7 @@
       <workItem from="1681904901324" duration="3308000" />
       <workItem from="1681912617120" duration="11422000" />
       <workItem from="1682062334640" duration="47000" />
+      <workItem from="1682062519607" duration="801000" />
     </task>
     <task id="LOCAL-00001" summary="исправление вложенности файлов">
       <created>1681896846651</created>
@@ -120,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682060996615</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1682062642947</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682062642947</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="исправление вложенности файлов" />
     <MESSAGE value="Реализованы карточки товаров компонентами. Проблема с путями к изображениям. Если путь /src/assets, то картинки недоступны, только при размещении /public/assets. Где исправить в manifest.json я не разобалась" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализованы карточки товаров компонентами. Проблема с путями к изображениям. Если путь /src/assets, то картинки недоступны, только при размещении /public/assets. Где исправить в manifest.json я не разобалась" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
