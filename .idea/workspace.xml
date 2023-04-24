@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4c9451a-0127-45f3-bd76-c95d93be5f0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.deploy">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
       </list>
@@ -109,7 +118,7 @@
       <workItem from="1681904901324" duration="3308000" />
       <workItem from="1681912617120" duration="11422000" />
       <workItem from="1682062334640" duration="47000" />
-      <workItem from="1682062519607" duration="801000" />
+      <workItem from="1682062519607" duration="2571000" />
     </task>
     <task id="LOCAL-00001" summary="исправление вложенности файлов">
       <created>1681896846651</created>
@@ -132,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682062642947</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="настройка diploy">
+      <created>1682064867428</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682064867428</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +171,7 @@
     <MESSAGE value="исправление вложенности файлов" />
     <MESSAGE value="Реализованы карточки товаров компонентами. Проблема с путями к изображениям. Если путь /src/assets, то картинки недоступны, только при размещении /public/assets. Где исправить в manifest.json я не разобалась" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="настройка diploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="настройка diploy" />
   </component>
 </project>
