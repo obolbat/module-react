@@ -1,12 +1,13 @@
 import './style.css';
-import Product from '../Product';
+import Product from '../ProductCard';
 import React from "react";
-import productsList from '../bd/products'
+import productsList from '../../bd/products'
 
 function Products() {
     return (
         <div className="products">
-            {productsList.map((item, key) => {
+            {
+                productsList.map((item, key) => {
                 return(
                     <Product
                         key={key}
@@ -17,7 +18,8 @@ function Products() {
                         weight={item.weight}
                     />
                 )
-            })}
+            })
+            }
         </div>
     )
 }

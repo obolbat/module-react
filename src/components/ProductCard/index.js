@@ -6,7 +6,7 @@ function Product(props) {
             <img className="product-preview" src={props.productPreview}/>
             <h2 className="product-title">{props.productTitle}</h2>
             <div className="product-description">{props.description}</div>
-            <div className="broduct-footer">
+            <div className="product-footer">
                 <div>
                     <span className="product-price">{formatPrice(props.price)}</span>
                     {props.price && props.weight ? ' / ' : ''}
