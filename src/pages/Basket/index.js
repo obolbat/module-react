@@ -1,7 +1,7 @@
 import './style.css'
 import React from "react";
-import BasketItem from "../BasketItem";
-import basketItemsList from "../bd/basketItems";
+import BasketItem from "../../components/BasketItem";
+import basketItemsList from "../../bd/basketItems";
 
 
 function Basket() {
