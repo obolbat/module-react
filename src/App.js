@@ -5,7 +5,7 @@ import PageHeader from './pages/PageHeader';
 import Basket from './pages/Basket';
 
 import './App.css';
-import './components/ProductPage/reset.css'
+import './css/reset.css'
 
 function App() {
     return (
