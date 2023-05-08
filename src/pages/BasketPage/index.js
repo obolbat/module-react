@@ -1,12 +1,14 @@
 import './style.css'
 import React from "react";
 import BasketItem from "../../components/BasketItem";
-import basketItemsList from "../../bd/basketItems";
+import BasketHeader from "../../components/BasketHeader";
 
 
 function Basket() {
+    const basketItemsList = JSON.parse(localStorage.getItem('cart')) || [];
     return (
         <>
+            <BasketHeader/>
             <div className="basket-products">
                 {basketItemsList.map((item, key) => {
                     return(
