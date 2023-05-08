@@ -6,7 +6,7 @@ function BasketItem(props) {
         <div className="basket-item">
             <img className="basket-preview" src={props.productPreview}/>
             <h2 className="basket-title">{props.productTitle}</h2>
-            <div className="basket-footer">
+            <div>
                 <span className="basket-price">{formatPrice(props.price)}</span>
                 <button className="basket-cart_button">x</button>
             </div>
