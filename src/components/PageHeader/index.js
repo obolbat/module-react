@@ -14,7 +14,7 @@ function PageHeader() {
                 <h1 className="title">Наша продукция</h1>
                 <div className="full-basket">
                     <div className="basket">{declOfNum(cnt, ['товар', 'товара', 'товаров'])}<br/> на сумму {formatPrice(price)}</div>
-                    <a href="/cart" className="basket-radius"><img className="image-bas" src={basketImg}/></a>
+                    <a href="/module-react/cart" className="basket-radius"><img className="image-bas" src={basketImg}/></a>
                  </div>
             </div>
         </div>

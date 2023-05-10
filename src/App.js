@@ -12,11 +12,11 @@ import './css/reset.css';
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/module-react",
         element: <Products/>
     },
     {
-        path: "/cart",
+        path: "/module-react/cart",
         element: <Basket/>
     }
 ]);
