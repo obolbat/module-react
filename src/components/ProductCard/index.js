@@ -1,12 +1,13 @@
 import './style.css'
+import {useDispatch} from "react-redux";
+import {addToCartList} from "../../store/reducers/cart";
 
-function Product({id, productPreview, productTitle, description, price, weight, measure, onAddHandler}) {
-    const onAddToCartHandler = () => {
-        const currentCart = JSON.parse(localStorage.getItem('cart')) || [];
+function Product({id, productPreview, productTitle, description, price, weight, measure}) {
 
-        currentCart.push({id, productPreview, productTitle, price});
-        localStorage.setItem('cart', JSON.stringify(currentCart));
-        onAddHandler();
+    const dispatch = useDispatch();
+
+    const addToCart = () => {
+        dispatch(addToCartList({id, productPreview, productTitle, price}));
     };
 
     return (
@@ -20,7 +21,7 @@ function Product({id, productPreview, productTitle, description, price, weight, 
                     {price && weight ? ' / ' : ''}
                     <span className="product-weight">{formatWeight(weight, measure)}</span>
                 </div>
-                <button className="product-cart_button" onClick={onAddToCartHandler}>+</button>
+                <button className="product-cart_button" onClick={addToCart}>+</button>
             </div>
         </div>
     )
