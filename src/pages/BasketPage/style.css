@@ -43,3 +43,9 @@
     margin-left: 359px;
     margin-top: 20px;
 }
+.basket_empty {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0 100px 0;
+}

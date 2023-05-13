@@ -3,6 +3,8 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import { store } from './store'
+import { Provider } from 'react-redux'
 
 import Products from './pages/ProductPage';
 import Basket from './pages/BasketPage';
@@ -23,7 +25,9 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <RouterProvider router={router} />
+        <Provider store={store}>
+            <RouterProvider router={router} />
+        </Provider>
     );
 }
 

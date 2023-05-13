@@ -1,19 +1,17 @@
 import './style.css'
 import basketImg from "../../assets/basket.svg";
+import {useSelector} from "react-redux";
 
 function PageHeader() {
-    const currentCart = JSON.parse(localStorage.getItem('cart')) || [];
-    const cnt = currentCart.length;
-    const price = currentCart.reduce((value, item) => {
-        return +item.price + value;
-    }, 0);
+    const productsCount = useSelector(state => state.cart.productsCount);
+    const totalPrice = useSelector(state => state.cart.totalPrice);
 
     return (
         <div className="main-header">
             <div className="header">
                 <h1 className="title">Наша продукция</h1>
                 <div className="full-basket">
-                    <div className="basket">{declOfNum(cnt, ['товар', 'товара', 'товаров'])}<br/> на сумму {formatPrice(price)}</div>
+                    <div className="basket">{declOfNum(productsCount, ['товар', 'товара', 'товаров'])}<br/> на сумму {formatPrice(totalPrice)}</div>
                     <a href="/module-react/cart" className="basket-radius"><img className="image-bas" src={basketImg}/></a>
                  </div>
             </div>
