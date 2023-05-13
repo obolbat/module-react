@@ -1,8 +1,8 @@
 import './style.css'
 import React from "react";
 import BasketItem from "../../components/BasketItem";
-import BasketHeader from "../../components/BasketHeader";
 import {useSelector} from "react-redux";
+import PageHeader from "../../components/PageHeader";
 
 
 function Basket() {
@@ -11,7 +11,10 @@ function Basket() {
 
     return (
         <>
-            <BasketHeader/>
+            <PageHeader
+                title="Корзина с выбранными товарами"
+                needBack={true}
+            />
             <div className="basket-products">
                 {
                     basketItemsList.length ?

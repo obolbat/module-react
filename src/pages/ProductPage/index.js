@@ -13,7 +13,10 @@ function ProductsPage() {
 
     return (
         <>
-            <PageHeader/>
+            <PageHeader
+                title="Наша продукция"
+                needCart={true}
+            />
             <div className="products">
                 {
                     productsList.map((item, key) => {

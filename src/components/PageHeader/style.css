@@ -10,37 +10,24 @@
 .title {
     color: #ffffff;
     font-size: 3em;
-    padding: 50px 70px;
+    padding: 50px 0;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
 }
-.full-basket {
-    display: flex;
-    padding: 50px 70px;
-}
-.basket-radius {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    margin-top: 10px;
-    background-color: #D58C51;
-    text-align: center;
-    padding: 14px;
-}
-.basket {
-    color: #ffffff;
-    margin: 15px 20px;
-    width: 170px;
-    height: 42px;
-    text-align: right;
+.back-button {
+    position: absolute;
+    top: 61px;
+    width: 32px;
+    height: 32px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
+    border-radius: 50%;
+    border: 1px solid #D58C51;
+    text-align: center;
+    padding: 4px;
 }
-.image-bas {
-    width: 20px;
-    height: 20px;
+.back-button + .title {
+    padding-left: 100px;
 }
