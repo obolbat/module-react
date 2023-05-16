@@ -1,39 +1,41 @@
 import React, {useState} from "react";
 import './style.css';
-import Product from '../../components/ProductCard';
+import ProductDetail from '../../components/ProductDetail';
 import PageHeader from "../../components/PageHeader";
-import productsList from '../../bd/products'
+import productsList from '../../bd/products';
+import {useParams} from "react-router";
 
-function ProductsPage() {
-    const [itemsCnt, setCnt] = useState((JSON.parse(localStorage.getItem('cart')) || []).length);
+function ProductPage() {
 
-    const onAddHandler = () => {
-        setCnt(itemsCnt + 1);
-    };
+    const {productId} = useParams();
+    const {id, productPreview, productTitle, description, price, weight, measure} = productsList.find(item => item.id === +productId) || {};
 
     return (
         <>
-            <PageHeader/>
-            <div className="products">
-                {
-                    productsList.map((item, key) => {
-                    return(
-                        <Product
-                            key={item.id}
-                            id={item.id}
-                            productPreview={item.productPreview}
-                            productTitle={item.productTitle}
-                            description={item.description}
-                            price={item.price}
-                            weight={item.weight}
-                            onAddHandler={onAddHandler}
+            <PageHeader
+                title=""
+                needCart={true}
+                needBack={true}
+            />
+            {
+                id ?
+                    (
+                        <ProductDetail
+                            id={id}
+                            productPreview={productPreview}
+                            productTitle={productTitle}
+                            description={description}
+                            price={price}
+                            weight={weight}
+                            measure={measure}
                         />
+                    ) :
+                    (
+                        <div className="">Товар не найден</div>
                     )
-                })
-                }
-            </div>
+            }
         </>
     )
 }
 
-export default ProductsPage;
+export default ProductPage;

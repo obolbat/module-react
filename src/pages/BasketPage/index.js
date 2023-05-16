@@ -1,8 +1,10 @@
 import './style.css'
 import React from "react";
 import BasketItem from "../../components/BasketItem";
-import BasketHeader from "../../components/BasketHeader";
 import {useSelector} from "react-redux";
+import PageHeader from "../../components/PageHeader";
+import {Link} from 'react-router-dom';
+import pages from "../../bd/pages";
 
 
 function Basket() {
@@ -11,7 +13,10 @@ function Basket() {
 
     return (
         <>
-            <BasketHeader/>
+            <PageHeader
+                title="Корзина с выбранными товарами"
+                needBack={true}
+            />
             <div className="basket-products">
                 {
                     basketItemsList.length ?
@@ -38,7 +43,7 @@ function Basket() {
                 <div className="order-footer">Заказ на сумму</div>
                 <div className="order-price">{formatPrice(totalPrice)}</div>
                 {
-                    basketItemsList.length ? (<button className="order_button">Оформить заказ</button>) : ''
+                    basketItemsList.length ? (<Link to={pages.order} className="order_button">Оформить заказ</Link>) : ''
                 }
             </div>
         </>

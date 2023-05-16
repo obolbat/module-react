@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 .product-item {
     color: #ffffff;
     font-size: 1em;
     border: #D58C51 solid 1px;
     width: 310px;
     padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
 }
-.product-item:hover {
+.product-item a:link, .product-item a:visited {
+    color: #ffffff;
+}
+.product-item:hover, .product-item:hover  a:link, .product-item:hover  a:visited {
     color: #D58C51;
 }
 .product-title {
@@ -29,6 +32,8 @@
 .product-footer {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    align-self: end;
 }
 
 .product-cart_button {

@@ -1,0 +1,14 @@
+.product-detail {
+     align-items: center;
+     display: flex;
+ }
+.product-detail_preview {
+    width: 50%;
+    padding: 30px;
+}
+.product-detail_info {
+    width: 50%;
+    padding: 30px;
+    color: #fff;
+}
+

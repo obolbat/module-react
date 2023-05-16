@@ -42,6 +42,8 @@
     height: 42px;
     margin-left: 359px;
     margin-top: 20px;
+    padding: 12px 40px;
+    text-align: center;
 }
 .basket_empty {
     color: #fff;

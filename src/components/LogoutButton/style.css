@@ -1,0 +1,7 @@
+.logout_btn {
+    height: fit-content;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #d48c57;
+    margin-left: 20px;
+}
