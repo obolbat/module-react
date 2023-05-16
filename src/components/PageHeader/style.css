@@ -6,11 +6,11 @@
     width: 1200px;
     max-width: 100%;
     position: relative;
+    padding: 50px 0;
 }
 .title {
     color: #ffffff;
     font-size: 3em;
-    padding: 50px 0;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -30,4 +30,9 @@
 }
 .back-button + .title {
     padding-left: 100px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
 }

@@ -1,6 +1,8 @@
 import './style.css'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCartList, removeFromCartList} from "../../store/reducers/cart";
+import {Link} from 'react-router-dom';
+import pages from "../../bd/pages";
 
 function Product({id, productPreview, productTitle, description, price, weight, measure}) {
     const isAdded = !!useSelector(({cart}) => cart.list.find(cartItem => cartItem.id === id));
@@ -16,8 +18,10 @@ function Product({id, productPreview, productTitle, description, price, weight, 
 
     return (
         <div className="product-item">
-            <img className="product-preview" src={productPreview}/>
-            <h2 className="product-title">{productTitle}</h2>
+            <Link to={pages.product + id}>
+                <img className="product-preview" src={productPreview}/>
+                <h2 className="product-title">{productTitle}</h2>
+            </Link>
             <div className="product-description">{description}</div>
             <div className="product-footer">
                 <div>

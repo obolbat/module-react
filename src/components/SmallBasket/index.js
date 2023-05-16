@@ -3,6 +3,7 @@ import basketImg from "../../assets/basket.svg";
 import React from "react";
 import {useSelector} from "react-redux";
 import {Link} from 'react-router-dom';
+import pages from "../../bd/pages";
 
 function SmallBasket() {
     const productsCount = useSelector(state => state.cart.productsCount);
@@ -11,7 +12,7 @@ function SmallBasket() {
     return (
         <div className="full-basket">
             <div className="basket">{declOfNum(productsCount, ['товар', 'товара', 'товаров'])}<br/> на сумму {formatPrice(totalPrice)}</div>
-            <Link to="/module-react/cart" className="basket-radius">
+            <Link to={pages.cart} className="basket-radius">
                 <img className="image-bas" src={basketImg}/>
             </Link>
         </div>
