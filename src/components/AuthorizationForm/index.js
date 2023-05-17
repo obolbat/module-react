@@ -156,10 +156,10 @@ function inputValidation(input) {
     let errMessage = '';
 
     if (!value) {
-        errMessage = 'Поле обязательно для заполнения';
+        errMessage = 'Поле не должно быть пустым';
     }
     else if (input.type === 'checkbox' && !input.checked) {
-        errMessage = 'Поле обязательно для заполнения';
+        errMessage = 'Поле не должно быть пустым';
     }
     else if (input.type === 'password' && value.length < 8) {
         errMessage = 'Пароль должен содержать как минимум 8 символов';

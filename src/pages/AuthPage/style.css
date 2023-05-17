@@ -43,7 +43,7 @@
     height: 50px;
     position: relative;
     border: 1px solid #D58C51;
-    border-radius: 10px;
+    border-radius: 25px;
 }
 .entry-field_required:before {
     content: '*';

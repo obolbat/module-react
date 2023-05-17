@@ -20,16 +20,16 @@ function ProductDetail({id, productPreview, productTitle, description, price, we
         <div className="product-detail content">
             <img className="product-detail_preview" src={productPreview}/>
             <div className="product-detail_info">
-                <h2 className="product-title">{productTitle}</h2>
-                <div className="product-description">{description}</div>
-                <div className="product-footer">
+                <h2 className="product-detail_title">{productTitle}</h2>
+                <div className="product-detail_description">{description}</div>
+                <div className="product-detail_footer">
                     <div>
-                        <span className="product-price">{formatPrice(price)}</span>
+                        <span className="product-detail_price">{formatPrice(price)}</span>
                         {price && weight ? ' / ' : ''}
-                        <span className="product-weight">{formatWeight(weight, measure)}</span>
+                        <span className="product-detail_weight">{formatWeight(weight, measure)}</span>
                     </div>
-                    <button className="product-cart_button" onClick={isAdded ? removeFromCart : addToCart}>
-                        {isAdded ? '—' : '+'}
+                    <button className="product-detail_cart_button" onClick={isAdded ? removeFromCart : addToCart}>
+                        {isAdded ? 'Удалить из корзины' : 'В корзину'}
                     </button>
                 </div>
             </div>
