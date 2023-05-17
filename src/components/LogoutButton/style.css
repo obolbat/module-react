@@ -7,3 +7,6 @@
     border: #D58C51 1px solid;
     color: #D58C4D;
 }
+.logout_btn:hover {
+    background-color: #696969;
+}

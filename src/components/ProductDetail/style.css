@@ -42,3 +42,7 @@
     padding: 12px 66px;
     background: #D58C51;
 }
+.product-detail_cart_button:hover {
+    background-color: #D2691E;
+    /*filter: invert(99%) sepia(0%) saturate(1%) hue-rotate(18deg) brightness(104%) contrast(102%);*/
+}
