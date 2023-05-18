@@ -11,7 +11,7 @@ function Basket() {
     const basketItemsList = useSelector(state => state.cart.list);
     const totalPrice = useSelector(state => state.cart.totalPrice);
 
-    return (
+    return  (
         <>
             <PageHeader
                 title="Корзина с выбранными товарами"
